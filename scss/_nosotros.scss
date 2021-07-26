@@ -1,0 +1,37 @@
+@mixin ancho{
+    width: 100%;
+    max-width: 1200px;
+    margin: 20px auto;
+}
+
+.somos{
+    @include ancho;
+}
+
+.somos__tarjeta {
+	position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    /* border: 1px solid rgba(0,0,0,.125); */
+    border-radius: .25rem;
+}
+    
+.somos__tarjeta--h2{
+    font-family: 'Bree Serif', serif;
+    text-decoration: none;
+    font-size: 35px;
+    color: black;
+    text-align: center;
+    text-transform: uppercase;
+    &:hover{
+        color: green;
+    }
+}
+
+.somos__tarjeta--p{
+    color: black;
+}

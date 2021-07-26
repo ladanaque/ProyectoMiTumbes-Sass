@@ -1,0 +1,32 @@
+.contenedor {
+	width: 100%;
+	max-width: 1200px;
+	margin: 20px auto;
+	
+}
+
+.contenedor__header{
+    padding: 20px;
+}
+
+.contenedor__logo{
+    margin-bottom: 20px;
+	text-transform: uppercase;
+	text-align: center;
+	letter-spacing: 3px;
+}
+
+.contenedor__logo--img{
+    width: 50%;
+}
+
+.contenedor__logo--h1{
+    font-size: 20px;
+    color: $color-naranja;
+    font-weight: bold;
+    font-family: 'Bree Serif', serif;
+    &:hover{
+        color: $color-verde;
+    }
+}
+

@@ -1,0 +1,23 @@
+@mixin ancho{
+    width: 100%;
+    max-width: 1200px;
+    margin: 20px auto;
+}
+
+.portafolio{
+    @include ancho;
+}
+
+.portafolio__titulos{
+    text-align: center;
+    h2{
+        font-family: 'Bree Serif', serif;
+        text-decoration: none;
+        font-size: 42px;
+        color: black;
+        padding: 12px;
+        &:hover{
+            color: $color-verde;
+        }
+    }
+}

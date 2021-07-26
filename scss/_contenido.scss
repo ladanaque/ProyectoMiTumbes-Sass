@@ -1,0 +1,60 @@
+.contenido{
+    width: 100%;
+	max-width: 1200px;
+	margin: 20px auto;
+}
+
+.contenido__titulos{
+    text-align: center;
+}
+
+.contenido__titulos h2{
+    font-family: 'Bree Serif', serif;
+    text-decoration: none;
+    font-size: 42px;
+    color: black;
+    padding: 12px;
+    &:hover{
+        color: $color-verde;
+    }
+}
+
+
+.card-body h3{
+    font-family: 'Bree Serif', serif;
+    font-size: 16px;
+	text-align: center;
+}
+
+.col__card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    /* border: 1px solid rgba(0,0,0,.125); */
+    border-radius: .25rem;
+    img{
+        transition: all 0.25s;
+        &:hover{
+            transform: translateY(-15px);
+            box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+        }
+    }
+}
+
+
+.contenido__boton{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    button{
+        color: $color-verde;
+        border-color: $color-naranja;
+        font-weight: bold;
+        border-radius: 8%;
+    }
+}

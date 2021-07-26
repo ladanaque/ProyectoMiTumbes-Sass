@@ -1,0 +1,27 @@
+@mixin ancho{
+    width: 100%;
+    max-width: 1200px;
+    margin: 20px auto;
+}
+
+.footer{
+    @include ancho;
+}
+
+.footer__parrafo{
+    font-size: 20px; 
+	padding: 5px; 
+	text-align: center;
+    color: white;
+    background-color: green;
+}
+
+p{
+    @if ($color-footer == white){
+        color: white;
+    }@else if($color-footer == green){
+        color: gray;
+    } @else {
+        color: orangered;
+    }
+}
